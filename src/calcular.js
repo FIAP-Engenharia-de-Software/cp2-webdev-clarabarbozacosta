@@ -10,7 +10,24 @@
 // - Executar a operação correta e retornar o resultado;
 
 function calcular(num1, num2, operador) {
-  // TODO: implementar função
+  if(operador == '+'){
+    resultado = num1 + num2
+    return(resultado)
+  } else if(operador == '-'){
+    resultado = num1 - num2
+    return(resultado)
+  } else if(operador == '*'){
+    resultado = num1 * num2
+    return(resultado)
+  } else if(operador == '/'){
+    resultado = num1 / num2
+    return(resultado)
+  } else if(isNaN(num1 || num2)){
+    return("Erro: parâmetros inválidos")
+  } else if(operador == '/' && num2 == 0){
+    return("Erro: divisão por zero")
+  } else if(operador != '+' || operador != '-' || operador != '*' || operador != '/')
+    return("Erro: operação inválida")
 }
 
 
